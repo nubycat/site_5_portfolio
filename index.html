@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+
+
+<!-- Секция header -->
+
+<header class="header">
+    <div class="header__top">
+        <div class="header__top_for">
+            <div class="header__top_left vkadish">
+                <h5 class="header__h5_white">For Business</h5>
+            </div>
+            <div class="header__top_right">
+                <h5 class="header__h5_black">For Customers</h5>
+            </div>
+        </div>
+
+        <div class="header__top_bottom">
+            <div class="header__top_logo">
+                <picture>
+                    <source srcset="img/top_logo.webp" type="image/webp">
+                    <source srcset="img/top_logo_2x.png" media="(min-resolution: 192dpi)">
+                    <img src="img/top_logo.svg" alt="">
+                </picture>
+            </div>
+            <div class="header__btn_top btn-open-modal">
+                <button class="header__btn_contact btn">Contact sales</button>
+                <img class="header__btn_burger" src="img/Burger.svg" alt="Кнопка бургер">
+            </div>
+        </div>
+    </div>
+
+    <div class="title__content">
+        <div class="header__content_left">
+            <h1 class="content__left_h1 text_h1">Everyone <br>is an Influencer</h1>
+            <p class="content__left_p">Budss is a payments as a service and WOM engine dedicated to acquisition and
+                retention of customers to your business.</p>
+            <div class="header__btn_top">
+                <button class="content__left_btn btn btn-open-modal">Contact sales</button>
+            </div>
+        </div>
+
+        <img class=".header__content_wom header__content_right" src="img/header__content_wom.svg" alt="">
+    </div>
+
+
+</header>
+
+<body>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="modal">
+        <div class="modal_content1">
+            <div class="close_btn"></div>
+            <form>
+                <!-- Имя -->
+                <div class="form-group">
+                    <label class="modal__label modal__label_name">Name <span class="required">*</span></label>
+                    <input class="modal__input" type="text" id="name" name="name" placeholder="Enter name">
+                    <span id="name-error" class="error-message">This field is required.</span>
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label class="modal__label modal__label_email" for="email">Email <span
+                            class="required">*</span></label>
+                    <input class="modal__input" type="email" id="email" name="email" placeholder="Enter your email"
+                        required>
+                    <span id="email-error" class="error-message">This field is required.</span>
+                </div>
+
+
+                <!-- Телефон -->
+                <div class="form-group module__phone">
+                    <label class="modal__label modal__label_phone" for="phone">
+                        Phone number <span class="required">*</span>
+                    </label>
+                    <!-- Флаг -->
+                    <span id="flag_icon" class="flag_icon"></span>
+
+                    <input class="modal__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__"
+                        required>
+                    <span id="phone-error" class="error-message">This field is
+                        required.</span>
+                </div>
+
+                <!-- компания -->
+                <div class=" form-group">
+                    <label class="modal__label modal__label_company" for="company">Company</label>
+                    <input class="modal__input" type="text" id="company" name="company" placeholder="Enter company"
+                        required>
+                </div>
+                <!-- Сайт -->
+                <div class=" form-group">
+                    <label class=" modal__label modal__label_website" for="website">Website/Store URL</label>
+                    <input class="modal__input" type="url" id="website" name="website"
+                        placeholder="Enter Website/Store URL" required>
+                </div>
+
+                <!-- заполните все -->
+                <p class="modal__p_error error-message"> Please fill in all required fields</p>
+
+            </form>
+            <p class="modal__p">By submitting this form you are agreeing to Budss’s <span
+                    class="modal__p_accent">Privacy Policy</span class="modal__p_accent"> and <span
+                    class="modal__p_accent"> Terms of Use</span></p>
+            <button class="submit_btn btn" type="submit ">Contact sales</button>
+        </div>
+    </div>
+
+    <!-- модуль спасибо -->
+    <div class="modal" id="new-modal" style="display: none;">
+        <div class="modal_content2">
+            <img src="img/thank.png" alt="">
+            <h4 class="thank_h4">Thank you!</h4>
+            <p class="thank_p">Thank you, we have received your application and will contact you soon!</p>
+            <button class="close-btn btn">Super!</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Секция about -->
+    <section class="about">
+        <div class="container">
+            <h1 class="about_h1 text_h1">About Budss</h1>
+            <div class="about_inner">
+                <div class="about_left">
+                    <p class="about__left_text">Payment as a service, powered seamlessly by our <span
+                            class="highlight">network of shoppers</span></p>
+                </div>
+                <div class="about_right">
+                    <div class="features">
+                        <div class="feature f1">
+                            <div class="feature__icon">
+                                <picture>
+                                    <source srcset="icons/contactless.webp" type="image/webp">
+                                    <source srcset="icons/contactless_2x.png" media="(min-resolution: 192dpi)">
+                                    <img src="icons/contactless.png" alt="Contactless" class="feature__icon-img">
+                                </picture>
+                            </div>
+                            <h3 class="feature__title">Contactless</h3>
+                            <p class="feature__text">Budss uses near field communication (NFC) for making contactless
+                                payments.
+                            </p>
+                        </div>
+                        <div class="feature f2">
+                            <div class="feature__icon">
+                                <picture>
+                                    <source srcset="icons/increased.webp" type="image/webp">
+                                    <source srcset="icons/increased_2x.png" media="(min-resolution: 192dpi)">
+                                    <img src="icons/increased.png" alt="Increased Buying Power"
+                                        class="feature__icon-img">
+                                </picture>
+                            </div>
+                            <h3 class="feature__title">Increased Buying Power</h3>
+                            <p class="feature__text">Returning customers spend up to 3X more.</p>
+                        </div>
+                        <div class="feature f3">
+                            <div class="feature__icon">
+                                <picture>
+                                    <source srcset="icons/analytics.webp" type="image/webp">
+                                    <source srcset="icons/analytics_2x.png" media="(min-resolution: 192dpi)">
+                                    <img src="icons/analytics.png" alt="Analytics & Insights" class="feature__icon-img">
+                                </picture>
+                            </div>
+                            <h3 class="feature__title">Analytics & Insights</h3>
+                            <p class="feature__text">Gain a holistic view into your customers' buying behavior &
+                                purchasing
+                                patterns.</p>
+                        </div>
+                        <div class="feature f4">
+                            <div class="feature__icon">
+                                <picture>
+                                    <source srcset="icons/fraud.webp" type="image/webp">
+                                    <source srcset="icons/fraud_2x.png" media="(min-resolution: 192dpi)">
+                                    <img src="icons/fraud.png" alt="Fraud Protection" class="feature__icon-img">
+                                </picture>
+                            </div>
+                            <h3 class="feature__title">Fraud Protection</h3>
+                            <p class="feature__text">Budss handles all payments with a fraud prevention algorithm to
+                                flag
+                                high
+                                risk purchases.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <picture class="about__elem">
+                <source srcset="img/about_elem.webp" type="image/webp">
+                <source srcset="img/about_elem_2x.png" media="(min-resolution: 192dpi)">
+                <img src="img/about_elem.png" alt="Analytics & Insights" class="about__elem-img">
+            </picture>
+
+        </div>
+    </section>
+
+    <!-- Секция iphone -->
+    <section class="iphone">
+        <div class="iphone_inner">
+            <picture class="iphone_box-img">
+                <source srcset="img/iphone-img/iphone-img.webp" type="image/webp" class="iphone-img">
+                <source srcset="img/iphone-img/iphone-img_2x.png" media="(min-resolution: 192dpi)" class="iphone-img">
+                <img src="img/iphone-img/iphone-img.png" alt="iphone" class="iphone-img">
+            </picture>
+            <picture class="iphone__bc_1">
+                <source srcset="img/iphone-img/iphone_bc-1.webp" type="image/webp" class="bc__1_img">
+                <source srcset="img/iphone-img/iphone_bc-1_2x.png" media="(min-resolution: 192dpi)" class="bc__1_img">
+                <img src="img/iphone-img/iphone_bc-1.png" alt="background 1" class="bc__1_img">
+            </picture>
+            <picture class="iphone__bc_2">
+                <source srcset="img/iphone-img/iphone_bc-2.webp" type="image/webp" class="bc__2_img">
+                <source srcset="img/iphone-img/iphone_bc-2_2x.png" media="(min-resolution: 192dpi)" class="bc__2_img">
+                <img src="img/iphone-img/iphone_bc-2.png" alt="background 2" class="bc__2_img">
+            </picture>
+            <picture class="iphone__bc_3">
+                <source srcset="img/iphone-img/iphone_bc-3.webp" type="image/webp" class="bc__3_img">
+                <source srcset="img/iphone-img/iphone_bc-3_2x.png" media="(min-resolution: 192dpi)" class="bc__3_img">
+                <img src="img/iphone-img/iphone_bc-3.png" alt="background 3" class="bc__3_img">
+            </picture>
+        </div>
+    </section>
+
+    <!-- Секция growth -->
+    <section class="growth">
+        <div class="growth__item growth__item_1">
+            <h2 class="growth_h2 text_h1">15%</h2>
+            <p class="growth_p">Increase in Purchase Amount</p>
+        </div>
+        <div class="growth__item growth__item_2">
+            <h2 class="growth_h2 text_h1">30%</h2>
+            <p class="growth_p">Growth in Annual Sales</p>
+        </div>
+        <div class="growth__item growth__item_3">
+            <h2 class="growth_h2 text_h1">10%</h2>
+            <p class="growth_p">Growth in New Customers</p>
+        </div>
+    </section>
+
+    <!-- Секция budss -->
+    <section class="budss">
+        <div class="container">
+            <div class="budss_inner">
+                <div class="budss__inner_top">
+                    <h2 class="budss_h2_t">Why Budss</h2>
+                    <p class="budss_p_t">We Provide Advanced Payment Solutions <span class="buds_highlight">To Grow Your
+                            Business</span>
+                    </p>
+                </div>
+                <div class="budss__inner_bottom">
+                    <div class="budss__bottom_item budss_item1">
+                        <picture class="budss__elem  budss__elem_1">
+                            <source srcset="img/budss_elem/budss_1.webp" type="image/webp">
+                            <source srcset="img/budss_elem/budss_1_2x.png" media="(min-resolution: 192dpi)">
+                            <img class="budss__item_img budss_1" src="img/budss_elem/budss_1.png" alt="">
+                        </picture>
+                        <div class="budss_1_360">
+                            <img src="img/budss_elem/budss_1_650.png" alt="Image 1" class="budss_1_360">
+                        </div>
+                        <div class="budss__flex_1">
+                            <h3 class="budss__item_h3 budss_h3_b budss__h3_1">Turn your customers into loyal influencers
+                            </h3>
+                            <p class="budss__item_p budss_p_b budss__p_1">Budss helps businesses harness the exponential
+                                power of
+                                loyal
+                                customers
+                                for acquisition and retention.</p>
+                        </div>
+                    </div>
+                    <div class="budss__bottom_item budss_item2">
+                        <img class="budss__item_img budss_2_1 budss__elem" src="img/budss_elem/budss_2_1.png" alt="">
+                        <img class="budss__item_img budss_2_2 budss__elem" src="img/budss_elem/budss_2_2.png" alt="">
+                        <img class="budss__item_img budss_2_3 budss__elem" src="img/budss_elem/budss_2_3.png" alt="">
+
+                        <div class="budss__flex_2">
+                            <h3 class="budss__item_h3 budss_h3_b budss__h3_2">Harness the power of buying in bulk</h3>
+                            <p class="budss__item_p budss_p_b budss__p_2">Get at least 2X more sales with Budss Buying
+                                Groups.
+                                Your customer
+                                base
+                                will grow exponentially as your customers add their friends & family to your
+                                personalized
+                                group.</p>
+
+                        </div>
+                    </div>
+                    <div class="budss__bottom_item budss_item3">
+                        <picture class="budss__elem budss__elem_3">
+                            <source srcset="img/budss_elem/budss_3.webp" type="image/webp">
+                            <source srcset="img/budss_elem/budss_3_2x.png" media="(min-resolution: 192dpi)">
+                            <img class="budss__item_img budss_3" src="img/budss_elem/budss_3.png" alt="">
+                        </picture>
+                        <div class="budss__flex_3">
+                            <h3 class="budss__item_h3 budss_h3_b budss__h3_3">Supercharge Loyalty With Instant Cash Back
+                            </h3>
+                            <p class="budss__item_p budss_p_b budss__p_3">Budss allows for shoppers to earn immediate
+                                cash back at
+                                their
+                                favorite
+                                stores.</p>
+                        </div>
+
+                    </div>
+                    <div class="budss__bottom_item budss_item4">
+                        <picture class="budss__elem budss__elem_4">
+                            <source srcset="img/budss_elem/budss_4.webp" type="image/webp">
+                            <source srcset="img/budss_elem/budss_4_2x.png" media="(min-resolution: 192dpi)">
+                            <img class="budss__item_img budss_4" src="img/budss_elem/budss_4.png" alt="">
+                        </picture>
+                        <div class="budss__flex_4">
+                            <h3 class="budss__item_h3 budss_h3_b budss__h3_4">Seasoned with AI and Gamification</h3>
+                            <p class="budss__item_p budss_p_b budss__p_4">AI programming creates a personalized customer
+                                journey,
+                                offering
+                                recommendations for their next purchase and optimizing rewards for after purchase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Секция dno -->
+    <section class="dno">
+
+        <div class="block__cta">
+            <div class="block__cta_inner">
+                <h2 class="cta_h2">Let Your Business Grow</h2>
+                <button class="btn block__cta_btn btn-open-modal">
+                    Contact sales
+                </button>
+            </div>
+        </div>
+
+        <div class="block__about">
+            <div class="block__about_inner">
+                <div class="block__about_left">
+                    <h1 class="block__about_title block_about_h1">Your Brand Awareness Maters</h1>
+                    <p class="block__about_text block__about_p">Budss is a husle free solution to put your brand on
+                        any digital surface including Instagram, Facebook, Twitter and TikTok</p>
+                </div>
+                <div class="block__about_right">
+                    <img class="about__right_icon" src="icons/dno/facebook.png" alt="">
+                    <img class="about__right_icon" src="icons/dno/twitter.png" alt="">
+                    <img class="about__right_icon" src="icons/dno/instagram.png" alt="">
+                    <img class="about__right_icon" src="icons/dno/tiktok.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="block__brandlogos">
+            <div class="block__brandlogos_inner">
+                <img class="brandlogos_icon brandlogos__icon1" src="icons/dno_logos/logo_1.png" alt="">
+                <img class="brandlogos_icon brandlogos__icon2" src="icons/dno_logos/logo_2.png" alt="">
+                <img class="brandlogos_icon brandlogos__icon3" src="icons/dno_logos/logo_3.png" alt="">
+                <img class="brandlogos_icon brandlogos__icon4" src="icons/dno_logos/logo_4.png" alt="">
+                <img class="brandlogos_icon brandlogos__icon5" src="icons/dno_logos/logo_5.png" alt="">
+            </div>
+        </div>
+        <div class="block__footer">
+
+            <div class="block__footer_top">
+                <img src="img/top_logo.png" alt="">
+                <div class="footer__top_txt">
+                    <p class="footer__top_p">For Business</p>
+                    <p class="footer__top_p">For Customers</p>
+                    <p class="footer__top_p footer__top_p_hidden">Privacy Policy</p>
+                    <p class="footer__top_p footer__top_p_hidden">Terms Of Use - Seller</p>
+                    <p class="footer__top_p footer__top_p_hidden">Terms of Use - Sellers & Customers</p>
+                </div>
+                <div class="footer__top_buttons">
+                    <button class="btn block__footer_btn btn-open-modal">Contact sales</button>
+                    <img src="icons/dno_buttons/but_1.png" alt="">
+                    <img src="icons/dno_buttons/but_2.png" alt="">
+                </div>
+            </div>
+
+            <div class="block__footer_bottom">
+                <div class="footer__bottom_inner">
+                    <div class="footer__bottom_left">
+                        <p class="footer__bottom_txt">© Copyright 2023, All Rights Reserved by Budss</p>
+                    </div>
+                    <div class="footer__bottom_right">
+                        <p class="footer__bottom_txt-r">Privacy Policy</p>
+                        <p class="footer__bottom_txt-r">Terms Of Use - Seller</p>
+                        <p class="footer__bottom_txt-r">Terms of Use - Sellers & Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Окно соглашения о куки -->
+    <div class="cookie_consent" id="cookie-consent">
+        <div class="cookie_content">
+            <div class="close__cookie_btn"></div>
+            <div class="cookie__text">
+                <p class="cookie__text_p">This website uses cookies to ensure you get the best experience on our
+                    website. They also allow us to analyze user behavior in order to constantly improve the website for
+                    you.
+                </p>
+            </div>
+            <div class="cookie__buttons">
+                <button class="cookie_accept cookie_btn">Accept</button>
+                <button class="cookie_decline cookie_btn">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
